@@ -19,7 +19,7 @@ class NewsScreen extends StatelessWidget {
             MText(
               text: "News",
               fontFamily: FoontFamily.mulishBold,
-              fontSize: 24.0,
+              fontSize: 20.0,
             ).mPadding(vertical: 12.0),
             Expanded(
               child: SingleChildScrollView(

@@ -21,31 +21,32 @@ class NewsScreenDetails extends StatelessWidget {
           builder: (context, state) {
             if (state is GetOneOfNewsListState) {
               return Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   MText(
                     text: state.news.title,
                     fontFamily: FoontFamily.mulishBold,
-                    fontSize: 20.0,
+                    fontSize: 16.0,
                     maxWidth: context.w * 0.9,
                     maxLines: 5,
                   ),
                   MText(
                     text: state.news.summary,
                     fontFamily: FoontFamily.mulishRegular,
-                    fontSize: 16.0,
+                    fontSize: 12.0,
                     maxWidth: context.w * 0.9,
                     maxLines: 10,
                   ).mPadding(top: 8.0, bottom: 12.0),
                   MText(
                     text: state.news.link,
-                    fontSize: 16.0,
+                    fontSize: 12.0,
                     fontFamily: FoontFamily.mulishRegular,
                     maxWidth: context.w * 0.9,
                     maxLines: 3,
                     fontColor: Coolors.blue,
                   ),
                 ],
-              );
+              ).mPadding(horizontal: 18.0, vertical: 20.0);
             }
             return const Center(child: CircularProgressIndicator())
                 .mPadding(all: 50.0);

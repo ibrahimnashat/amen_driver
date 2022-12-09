@@ -17,28 +17,28 @@ class NewsItem extends StatelessWidget {
         color: Coolors.grey.withOpacity(0.2),
         borderRadius: BorderRadius.circular(35),
       ),
-      padding: const EdgeInsets.all(21.0),
-      margin: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 12.0),
+      padding: const EdgeInsets.all(18.0),
+      margin: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 12.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           MText(
             text: news.title,
             fontFamily: FoontFamily.mulishBold,
-            fontSize: 20.0,
+            fontSize: 16.0,
             maxWidth: context.w * 0.9,
             maxLines: 5,
           ),
           MText(
             text: news.summary,
             fontFamily: FoontFamily.mulishRegular,
-            fontSize: 16.0,
+            fontSize: 12.0,
             maxWidth: context.w * 0.9,
             maxLines: 10,
           ).mPadding(top: 8.0, bottom: 12.0),
           MText(
             text: news.link,
-            fontSize: 16.0,
+            fontSize: 12.0,
             fontFamily: FoontFamily.mulishRegular,
             maxWidth: context.w * 0.9,
             maxLines: 3,
