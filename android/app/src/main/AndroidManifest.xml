@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.amen_driver">
+    package="com.example.clean_architecture">
    <application
         android:label="Amen Driver"
         android:name="${applicationName}"

@@ -1,6 +1,6 @@
 // ignore_for_file: must_be_immutable
 
-import 'package:amen_driver/core/consts/exports.dart';
+import 'package:clean_architecture/core/consts/exports.dart';
 
 class MText extends StatelessWidget {
   final String? text;
@@ -25,7 +25,7 @@ class MText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    fontFamily ??= FoontFamily.tajawalLight;
+    fontFamily ??= FoontFamily.mulishLight;
     return SizedBox(
       width: maxWidth,
       child: Text(
@@ -45,9 +45,3 @@ class MText extends StatelessWidget {
     );
   }
 }
-
-// typedef TextBuilder = String Function(
-//   bool opertion,
-//   String result1,
-//   String result2,
-// );

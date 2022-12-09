@@ -1,4 +1,4 @@
-import 'package:amen_driver/core/consts/exports.dart';
+import 'package:clean_architecture/core/consts/exports.dart';
 
 class Coolors {
   static const Color primaryColor = Color(0xff0367E3);

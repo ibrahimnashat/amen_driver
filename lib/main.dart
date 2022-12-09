@@ -1,7 +1,6 @@
-import 'package:amen_driver/core/injection/injectable.dart';
-import 'package:amen_driver/features/splash/view/splash_screen.dart';
+import 'package:clean_architecture/core/injection/injectable.dart';
+import 'package:clean_architecture/features/auth/presentaion/view/news/news_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:responsive_framework/responsive_framework.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,37 +19,7 @@ class _AmenDriverApplicationState extends State<AmenDriverApplication> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
-      builder: (context, child) {
-        return ResponsiveWrapper.builder(
-          child,
-          maxWidth: 1200,
-          minWidth: 480,
-          defaultScale: true,
-          defaultName: MOBILE,
-          defaultNameLandscape: MOBILE,
-          breakpoints: [
-            const ResponsiveBreakpoint.resize(
-              480,
-              name: MOBILE,
-              scaleFactor: 0.85,
-            ),
-            const ResponsiveBreakpoint.autoScale(
-              800,
-              name: TABLET,
-              scaleFactor: 0.9,
-            ),
-            const ResponsiveBreakpoint.resize(
-              1000,
-              name: DESKTOP,
-            ),
-            const ResponsiveBreakpoint.autoScale(
-              2460,
-              name: '4K',
-            ),
-          ],
-        );
-      },
+      home: NewsScreen(),
     );
   }
 }
